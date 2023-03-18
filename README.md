@@ -14,19 +14,62 @@ Install with npm
   npm i shopping-cart-provider
 ```
 
-## Usage
+## Usage/Example
 
-Shopping cart provider component can be imported from `shopping-cart-provider` and can be placed in react component tree.
+- Shopping cart provider component can be imported from `shopping-cart-provider` and can be placed in react component tree.
+- Shopping cart provider should be placed at parent component in order to use available functions in child component
 
-```React
-import useShoppingCartProvider from 'shopping-cart-provider'
+### `index.js or index.tsx`
+
+```index
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import { ShoppingCartProvider } from "shopping-cart-provider";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+
+   <ShoppingCartProvider>
+      <App /> //child component can be placed here
+   </ShoppingCartProvider>
+
+);
+
+```
+
+- Now we can use all the function of shopping-cart-provider in its child component by importing `useShoppingCart` from `shopping-cart-provider`
+- For above example the child is App component
+
+### `app.js or app.tsx`
+
+```app
+import { useShoppingCart } from "shopping-cart-provider";
 
 function App() {
-  <useShoppingCartProvider>
-    <p>Provider added</p>
-  </useShoppingCartProvider>
+
+  //Use all available functions from useShoppingCart as follows
+  const { getItemQuantity, increaseCartQuantity } = useShoppingCart();
+
+  return (
+    <div>
+        //Add product to cart
+        <button onClick={() => increaseCartQuantity({ id: "productid" })}>
+          Add to cart
+        </button>
+
+        // Get quantity of product based on id
+        <p>Product quantity {getItemQuantity("productid")}</p>
+
+    </div>
+  );
 }
+
+export default App;
+
 ```
+
+- Similar to above example you can use and implement the advanced shopping cart functionality with all available functions.
 
 ## Available Options
 
