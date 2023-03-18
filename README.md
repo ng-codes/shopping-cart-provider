@@ -1,4 +1,4 @@
-# Advance shopping cart provider
+# Shopping cart provider
 
 The advance-shopping-cart provider component leverages React's Context API to make a configured shopping cart available throughout a React component tree. This component can be imported directly from the shopping-cart-provider.
 
