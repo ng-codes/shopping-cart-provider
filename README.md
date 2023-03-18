@@ -1,6 +1,6 @@
 # Advance shopping cart provider
 
-The advance-shopping-cart provider component leverages React's Context API to make a configured shopping cart available throughout a React component tree. This component can be imported directly from the advance-shopping-cart.
+The advance-shopping-cart provider component leverages React's Context API to make a configured shopping cart available throughout a React component tree. This component can be imported directly from the shopping-cart-provider.
 
 ## Authors
 
@@ -11,15 +11,15 @@ The advance-shopping-cart provider component leverages React's Context API to ma
 Install with npm
 
 ```bash
-  npm i advance-shopping-cart
+  npm i shopping-cart-provider
 ```
 
 ## Usage
 
-Shopping cart provider component can be imported from `advance-shopping-cart` and can be placed in react component tree.
+Shopping cart provider component can be imported from `shopping-cart-provider` and can be placed in react component tree.
 
 ```React
-import useShoppingCartProvider from 'advance-shopping-cart'
+import useShoppingCartProvider from 'shopping-cart-provider'
 
 function App() {
   <useShoppingCartProvider>
