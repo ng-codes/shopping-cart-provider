@@ -1,7 +1,7 @@
 {
-  "name": "advance-shopping-cart",
+  "name": "shopping-cart-provider",
   "version": "1.0.0",
-  "description": "The advance-shopping-cart provider component leverages React's Context API to make a configured shopping cart available throughout a React component tree. This component can be imported directly from the advance-shopping-cart",
+  "description": "The shopping-cart-provider component leverages React's Context API to make a configured shopping cart available throughout a React component tree. This component can be imported directly from the shopping-cart-provider",
   "main": "lib/index.js",
   "scripts": {
     "test": "jest --config jestconfig.json",
