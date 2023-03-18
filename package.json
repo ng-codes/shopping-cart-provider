@@ -1,6 +1,6 @@
 {
   "name": "shopping-cart-provider",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The shopping-cart-provider component leverages React's Context API to make a configured shopping cart available throughout a React component tree. This component can be imported directly from the shopping-cart-provider",
   "main": "lib/index.js",
   "scripts": {
