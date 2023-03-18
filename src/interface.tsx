@@ -6,8 +6,8 @@ export type ShoppingCartProviderProps = {
 
 export type CartItem = {
   id: string;
-  quantity: number;
-  price: number;
+  quantity?: number;
+  price?: number;
   data?: {};
 };
 
